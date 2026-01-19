@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FAFAFA"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvOyuncuIsmi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Oyuncu"
+            android:textStyle="bold"
+            android:textColor="#333" />
+        <TextView
+            android:id="@+id/tvHamle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hamle: 0"
+            android:textSize="16sp"
+            android:textColor="#1976D2"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvSure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Süre: 60"
+            android:textSize="18sp"
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:paddingEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/tvSkor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skor: 0"
+            android:textSize="18sp"
+            android:textColor="#388E3C"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/oyunIzgarasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="5dp">
+        </GridLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

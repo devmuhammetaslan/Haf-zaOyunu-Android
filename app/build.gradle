@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    // ALDIĞIN HATAYI ÇÖZEN SATIR BURASI:
+    namespace 'tr.edu.atauni.hafizaoyunu'
+
+    compileSdk 34 // Güncel derleme sürümü
+
+    defaultConfig {
+        applicationId "tr.edu.atauni.hafizaoyunu"
+        minSdk 24     // Android 7.0 ve üzeri telefonlar için
+        targetSdk 34  // En yeni Android sürümü hedefli
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Java versiyon uyumluluğu için gerekli ayarlar
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Temel kütüphaneler (AppCompat, Material Design, Grid yapısı için)
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation"androidx.gridlayout:gridlayout:1.0.0"
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging' // Bildirim için
+    implementation 'com.google.firebase:firebase-firestore' // Skor tablosu için
+    implementation 'com.google.firebase:firebase-messaging:23.4.0'
+
+    // Test kütüphaneleri
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
