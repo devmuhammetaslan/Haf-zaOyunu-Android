@@ -35,9 +35,9 @@ Android Activity Yaşam Döngüsü (Lifecycle) profesyonelce yönetilmiştir.
 
 ## 👨‍💻 Geliştirici (Developer)
 
-**[Muhammet Aslan]**
+**Muhammet Aslan**
 * Software Engineering Student
-* [LinkedIn Profil Linkim] : (https://www.linkedin.com/in/muhammet-aslan-1890a4350/)
-* [Email Adresim] : muhammet.aslan.dev@gmail.com
+* LinkedIn Profil Linkim : (https://www.linkedin.com/in/muhammet-aslan-1890a4350/)
+* Email Adresim : muhammet.aslan.dev@gmail.com
 
 ---
